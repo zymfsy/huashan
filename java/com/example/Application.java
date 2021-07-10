@@ -6,5 +6,6 @@ public class Application {
         System.out.println("Hello world!");
         System.out.println("Hi !");
         System.out.println("edit in IDEA ");
+        System.out.println("edit in console");
     }
 }
