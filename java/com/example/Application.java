@@ -17,7 +17,6 @@ public class Application {
         for (File file : files) {
             List<String> sections = Files.readAllLines(file.toPath());
             sections = sections.stream().map(String::trim).collect(Collectors.toList());
-            sections.removeIf(StringUtils::isEmpty);
             String title = file.getName().substring(0, file.getName().indexOf("."));
             map.put(title,sections);
         }
